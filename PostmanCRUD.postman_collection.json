@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "2e261989-5200-40a1-ad68-05f11f650166",
+		"name": "PostmanCRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "obtenerUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerUsuarioPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario/30",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"30"
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				},
+				{
+					"name": "obtenerUsuarioPorRol",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario/query?rol=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"query"
+							],
+							"query": [
+								{
+									"key": "rol",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarUsuarioPorId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuario/30",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"30"
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				},
+				{
+					"name": "guardarUsuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nombres\": \"Carlos2\",\n\t\"apellidos\": \"Rincon2\",\n\t\"tipodocumento\": 1,\n\t\"numerodocumento\": \"12345\",\n\t\"usuarionombre\": \"CR\",\n\t\"pass\": \"123\",\n\t\"estado\": \"activo\",\n\t\"rol\": 1,\n\t\"desvincular\": \"NO\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/usuario",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario"
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
