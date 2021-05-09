@@ -1,0 +1,22 @@
+
+<form (submit)="createNewLocation(nameLocation, areaLocation, parentLocLocation)">
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Name Location</mat-label>
+        <input matInput type="text" #nameLocation>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Location Area</mat-label>
+        <input matInput type="number" #areaLocation>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+        <mat-label>Parent Location</mat-label>
+        <input matInput type="number" #parentLocLocation>
+    </mat-form-field>
+    <br>
+    <div class="example-button-container">
+        <button mat-raised-button color="primary">Create Location</button>
+    </div>
+</form>

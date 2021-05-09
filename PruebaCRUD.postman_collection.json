@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "3466cde5-a5c9-4b92-83fa-a32251895eeb",
+		"name": "PruebaCRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "getLocations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/location",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"location"
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				},
+				{
+					"name": "Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/location/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"location",
+								"2"
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				},
+				{
+					"name": "createLocation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\" : 2,\n    \"name\": \"Medellin\",\n    \"area_m2\": 200,\n    \"parentloc\" : 1\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/location",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"location"
+							]
+						},
+						"description": "Pruebas de endpoints para papeleria par web con spring"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

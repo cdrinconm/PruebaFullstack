@@ -1,0 +1,25 @@
+<hr>
+<h1 color="primary">{{saludo}}</h1>
+<hr>
+<section>
+    <div class="example-button-row">
+        <div class="example-flex-container">
+            <div class="example-button-container">
+                <a routerLink="/">
+                    <button mat-fab color="primary">
+                        <mat-icon>plus_one</mat-icon>
+                    </button>
+                </a>
+            </div>
+            <div class="example-button-container">
+                <a routerLink="/getlocations">
+                    <button mat-fab color="primary">
+                        <mat-icon>description</mat-icon>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<router-outlet></router-outlet>
