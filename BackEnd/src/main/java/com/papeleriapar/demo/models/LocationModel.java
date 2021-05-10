@@ -16,7 +16,6 @@ public class LocationModel {
     private int id;
     private String name;
     private int area_m2;
-    //private int[] internalloc;
     private int parentloc;
 
     public int getId() {
@@ -42,15 +41,7 @@ public class LocationModel {
     public void setArea_m2(int area_m2) {
         this.area_m2 = area_m2;
     }
-    /*
-    public int[] getInternalloc() {
-        return internalloc;
-    }
-
-    public void setInternalloc(int[] internalloc) {
-        this.internalloc = internalloc;
-    }
-    */
+    
     public int getParentloc() {
         return parentloc;
     }
