@@ -13,14 +13,28 @@ public class LocationService {
     LocationRepository usuarioRepository;
 
     public ArrayList<LocationModel> getLocations() {
+        // Trae todas las ubicaciones
         return (ArrayList<LocationModel>) usuarioRepository.findAll();
     }
 
     public LocationModel createLocation(LocationModel location) {
-        return usuarioRepository.save(location); // Si se envia el id de location, se actualiza la location.
+        // Crea una ubicacion. Si se especifica el id, se actualiza la ubicacion de dicho id.
+        return usuarioRepository.save(location); 
     }
     
-    public LocationModel Location(Integer id) {
+    public Optional<LocationModel> getLocationById(Long id) {
+        // Obtener una ubicacion especificando el id.
         return usuarioRepository.findById(id);
+    }
+    
+    public boolean deleteLocation(Long id) {
+        // Eliminar una ubicacion especificando el id.
+        try{
+            usuarioRepository.deleteById(id);
+            return true;
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            return false;
+        }
     }
 }

@@ -1,23 +1,32 @@
 <table mat-table [dataSource]="locations" class="mat-elevation-z8">
 
     <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> Id </th>
-        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        <th mat-header-cell *matHeaderCellDef> <em> Id </em> </th>
+        <td mat-cell *matCellDef="let element"><strong> {{element.id}} </strong></td>
     </ng-container>
 
     <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <th mat-header-cell *matHeaderCellDef> <em> Name </em> </th>
         <td mat-cell *matCellDef="let element"> {{element.name}} </td>
     </ng-container>
 
     <ng-container matColumnDef="area_m2">
-        <th mat-header-cell *matHeaderCellDef> Area (M2) </th>
+        <th mat-header-cell *matHeaderCellDef> <em> Area (M2) </em> </th>
         <td mat-cell *matCellDef="let element"> {{element.area_m2}} </td>
     </ng-container>
 
     <ng-container matColumnDef="parentloc">
-        <th mat-header-cell *matHeaderCellDef> Parent Location </th>
+        <th mat-header-cell *matHeaderCellDef> <em> Parent Location </em> </th>
         <td mat-cell *matCellDef="let element"> {{element.parentloc}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="eliminar">
+        <th mat-header-cell *matHeaderCellDef> <em> Delete </em> </th>
+        <td mat-cell *matCellDef="let element">
+            <form (submit)="deleteLocation(element.id)">
+                <button mat-raised-button color="warn">Delete</button>
+            </form>
+        </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

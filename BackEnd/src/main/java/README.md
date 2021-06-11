@@ -25,7 +25,7 @@ Representacion de las tablas de la base en datos en clases.
 
 Other Sources -> src/main/resources -> application.properties
 
-Se ecnuentra toda la configuracion a la base de datos en PostgreSQL.
+Se encuentra toda la configuracion a la base de datos en PostgreSQL.
 
 ******************************************** INSTRUCCIONES ********************************************
 
@@ -40,11 +40,6 @@ Instrucciones para correr el BackEnd
     - Correr comando "mvn clean install", "cd target/" y "java -jar BackendPrueba-0.0.1.jar" para correr el servidor.
 5- Relizar las pruebas en Postman o en el navegador(http://localhost:8080/location).
     - Para ver el CRUD se pede usar la interfaz de Swagger http://localhost:8080/swagger-ui.html.
-
-******************************************** DOCKER ********************************************
-
-1- Ir a la carpeta de Docker
-2- Correr el comando por terminal "docker-compose up -d" para levantar la imagen.
 
 ******************************************** ANGULAR ********************************************
 

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FrontEnd';
-  saludo = 'Prueba Front-End Angular';
+  saludo = 'Prueba Assert Solutions';
 }

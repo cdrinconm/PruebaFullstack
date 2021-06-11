@@ -11,5 +11,7 @@ import com.papeleriapar.demo.models.LocationModel;
 
 @Repository
 public interface LocationRepository extends CrudRepository<LocationModel, Long>{
+    
+    //Traer una ubicacion especificando el id
     public abstract LocationModel findById(Integer id);
 }
